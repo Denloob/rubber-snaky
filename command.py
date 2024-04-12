@@ -28,3 +28,9 @@ def run():
     #   release_all() - release all keys
     #   send(keycode1: Keycode, ...) - press keys at the same time and then release them
     return
+
+    # Example rubber snaky script for updating and installing some software in ubuntu
+    send(Keycode.CTRL, Keycode.SHIFT, Keycode.T) # Open the terminal using the CTRL+SHIFT+T shortcut
+
+    sleep(0.5) # Let the terminal start
+    write("sudo apt update && sudo apt upgrade && sudo apt install git build-essential neovim firefox") # Write the command to perform the update

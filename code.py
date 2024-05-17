@@ -32,4 +32,4 @@ if not safety_flag:
 else:
     led.value = False
     while True:
-        pass
+        time.sleep(10) # we need to hang to ensure the lad stays on

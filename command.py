@@ -5,6 +5,8 @@ from adafruit_hid.keycode import Keycode
 
 import time
 
+NO_RUN = False  # Don't run the snaky script at all.
+
 sleep_time_sec: int = 5 # The amount of time to wait before running the snaky script
 
 keyboard = Keyboard(usb_hid.devices)

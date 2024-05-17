@@ -11,7 +11,7 @@ safety_pin.direction = digitalio.Direction.INPUT
 safety_pin.pull = digitalio.Pull.UP
 
 counter = command.sleep_time_sec * 2
-safety_flag = False
+safety_flag = command.NO_RUN # if NO_RUN is enabled, safety_flag automatically is on.
 while counter > 0 and not safety_flag:
     time.sleep(0.5)
     counter -= 1

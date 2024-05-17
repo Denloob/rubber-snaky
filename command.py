@@ -36,7 +36,7 @@ def run():
     return
 
     # Example rubber snaky script for updating and installing some software in ubuntu
-    send(Keycode.CTRL, Keycode.SHIFT, Keycode.T) # Open the terminal using the CTRL+SHIFT+T shortcut
+    send(Keycode.CONTROL, Keycode.SHIFT, Keycode.T) # Open the terminal using the CTRL+SHIFT+T shortcut
 
     sleep(0.5) # Let the terminal start
 

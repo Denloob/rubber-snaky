@@ -8,7 +8,8 @@ CircuitPython scripts for easy HID script programming
 ## Install
 Drag and drop the files (all python scripts and the `lib/` directory) to the mounted drive from CircuitPython.
 > [!NOTE]
-> The snaky will immediately start running after the installation.
+> The snaky will immediately start running after the installation. <br>
+> See [Preventing script execution](#preventing-script-execution) for more details.
 
 ## Changing the HID script
 Open [command.py](command.py) and change the contents of the `run()` function.
@@ -21,3 +22,5 @@ To stop the snaky from executing, it's possible to ground the A0 pin in the firs
 5 seconds. If the execution was stopped, the led on the board will turn on.
 
 It's possible to change the delay time in [command.py](command.py).
+
+You can also completely disable execution by setting `NO_RUN` to `True` in [command.py](command.py).
